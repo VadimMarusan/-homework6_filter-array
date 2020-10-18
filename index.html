@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+      let array = ['hello', 'world', 23, '23', null, true];
+
+      function filterBy(arr, type1) {
+        if (type1) {
+            let newArray = arr.filter(function (type){
+                return typeof type !== type1;
+            });
+            console.log (newArray);
+        } else {
+            console.log('err');
+        }
+      }
+      filterBy(array, "string");
+
+
+
+/*let newArray = array.filter(function (type){
+    return typeof type !== "string";
+});
+console.log (newArray);
+*/
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
